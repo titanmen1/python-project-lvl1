@@ -1,4 +1,4 @@
-#!/usr/bin/env python  # noqa: WPS453
+#!/usr/bin/env python
 """3."""
 from brain_games.cli import welcome_user
 
