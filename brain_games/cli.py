@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python  # noqa: WPS453
 """CLI."""
 import prompt
 
