@@ -14,13 +14,13 @@ def create_game():
     return random.randint(1, 100)  # noqa: S311
 
 
-def correct_answer(number):
+def correct_answer(question):
     """Create correct answer.  # noqa: DAR201, D400
 
     Args:
-        number: Number from game.
+        question: Number from game.
 
     Returns:
         return the correct answer.
     """
-    return 'yes' if number % 2 == 0 else 'no'
+    return 'yes' if question % 2 == 0 else 'no'

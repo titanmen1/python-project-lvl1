@@ -18,9 +18,9 @@ def play_game(game):
     iteration = 0
 
     while iteration < NUMBER_OF_ROUNDS:
-        number = game.create_game()
-        correct_answer = game.correct_answer(number)
-        print('Question: {0}'.format(number))  # noqa: WPS421
+        question = game.create_game()
+        correct_answer = game.correct_answer(question)
+        print('Question: {0}'.format(question))  # noqa: WPS421
         user_answer = prompt.string('Your answer: ')
 
         if user_answer == correct_answer:
