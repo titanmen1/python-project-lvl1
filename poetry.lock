@@ -460,7 +460,7 @@ typing_extensions = ">=3.6,<4.0"
 
 [metadata]
 lock-version = "1.1"
-python-versions = "^3.9"
+python-versions = "^3.8"
 content-hash = "0bb5f5020e51f1968975e6a32f4db6f892564a266a3369217f010e4df843f902"
 
 [metadata.files]

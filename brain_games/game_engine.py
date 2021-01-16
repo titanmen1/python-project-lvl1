@@ -1,0 +1,34 @@
+#!/usr/bin/env python
+"""Core module."""
+import prompt
+
+from brain_games.cli import welcome_user
+
+NUMBER_OF_ROUNDS = 3
+
+
+def play_game(game):
+    """Engine for the 'Brain Game'.
+
+    Args:
+        game: The game.
+    """
+    name_user = welcome_user()
+    print(game.DESCRIPTION)  # noqa: WPS421
+    iteration = 0
+
+    while iteration < NUMBER_OF_ROUNDS:
+        number = game.create_game()
+        correct_answer = game.correct_answer(number)
+        print('Question: {0}'.format(number))  # noqa: WPS421
+        user_answer = prompt.string('Your answer: ')
+
+        if user_answer == correct_answer:
+            print('Correct!')  # noqa: WPS421
+            iteration += 1
+        else:
+            print("'{0}' is wrong answer ;(. Correct answer was '{1}'.".format(user_answer, correct_answer))  # noqa: WPS421, E501
+            print("Let's try again, {0}!".format(name_user))  # noqa: WPS421
+            return
+
+    print('Congratulation, {0}!'.format(name_user))  # noqa: WPS421
