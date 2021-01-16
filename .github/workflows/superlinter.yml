@@ -24,6 +24,8 @@ jobs:
         run: |
           pip install poetry
           make install
+          chmod +x ./brain_games/cli.py
+          chmod +x ./brain_games/scripts/brain_games.py
 
       - name: Lint
         run: make lint
