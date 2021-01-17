@@ -1,10 +1,10 @@
 #!/usr/bin/env python
-"""Base script"""
+"""Base script."""
 from brain_games.cli import welcome_user
 
 
 def main():
-    """main func for base 'welcome' func."""
+    """Start base 'welcome' func."""
     welcome_user()
 
 

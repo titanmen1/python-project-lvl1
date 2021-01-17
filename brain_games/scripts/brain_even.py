@@ -5,7 +5,7 @@ from brain_games.games import brain_even
 
 
 def main():
-    """main func for game even."""
+    """Start game even."""
     play_game(brain_even)
 
 

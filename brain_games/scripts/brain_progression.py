@@ -5,7 +5,7 @@ from brain_games.games import brain_progression
 
 
 def main():
-    """main func for game progression."""
+    """Start game progression."""
     play_game(brain_progression)
 
 

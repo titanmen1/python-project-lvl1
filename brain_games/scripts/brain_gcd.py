@@ -5,7 +5,7 @@ from brain_games.games import brain_gcd
 
 
 def main():
-    """main func for game gcd."""
+    """Start game gcd."""
     play_game(brain_gcd)
 
 

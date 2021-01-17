@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Core module. Game engine"""
+"""Core module. Game engine."""
 import prompt
 
 from brain_games.cli import welcome_user
