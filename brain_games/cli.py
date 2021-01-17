@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""CLI."""
+"""Script for CLI."""
 import prompt
 
 

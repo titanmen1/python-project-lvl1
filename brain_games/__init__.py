@@ -1,1 +1,1 @@
-"""1."""
+"""File init brain games."""

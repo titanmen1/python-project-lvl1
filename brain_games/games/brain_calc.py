@@ -11,10 +11,10 @@ operators = ['+', '-', '*']
 
 
 def create_game():
-    """Generate the 'Brain-Calc' game data.
+    """Create the 'Brain-Calc' game data.
 
     Returns:
-        return the question and correct_answer.
+        return the question.
     """
     num1 = randint(NUMBER_START_RND, NUMBER_FINISH_RND)  # noqa: S311
     num2 = randint(NUMBER_START_RND, NUMBER_FINISH_RND)  # noqa: S311

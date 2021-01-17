@@ -1,11 +1,11 @@
 #!/usr/bin/env python
-"""5."""
+"""Script game progression."""
 from brain_games.game_engine import play_game
 from brain_games.games import brain_progression
 
 
 def main():
-    """Script game progression."""
+    """main func for game progression."""
     play_game(brain_progression)
 
 

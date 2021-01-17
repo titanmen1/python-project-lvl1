@@ -1,1 +1,1 @@
-"""2."""
+"""File init script."""

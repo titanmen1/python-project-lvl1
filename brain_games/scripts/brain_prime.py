@@ -1,11 +1,11 @@
 #!/usr/bin/env python
-"""6."""
+"""Script game prime."""
 from brain_games.game_engine import play_game
 from brain_games.games import brain_prime
 
 
 def main():
-    """Script game calc."""
+    """main func for game prime."""
     play_game(brain_prime)
 
 

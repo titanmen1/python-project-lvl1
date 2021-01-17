@@ -8,7 +8,7 @@ DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
 
 def create_game():
-    """The Brain-gcd data.  # noqa: D401, D400
+    """Create the 'Brain-gcd' game data.  # noqa: D401, D400
 
     Returns:
         return the 2 numbers.

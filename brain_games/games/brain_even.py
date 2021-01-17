@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""File with Game even."""
+"""Game even."""
 import random
 
 from brain_games.consts import NUMBER_FINISH_RND, NUMBER_START_RND
@@ -8,7 +8,7 @@ DESCRIPTION = 'Answer "yes" if number even otherwise answer "no".'
 
 
 def create_game():
-    """The Brain-Even data.  # noqa: D401, D400
+    """Create the 'Brain-Even' game data.  # noqa: D401, D400
 
     Returns:
         return the number.

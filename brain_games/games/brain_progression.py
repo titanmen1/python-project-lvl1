@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Game gcd."""
+"""Game progression."""
 from random import randint
 
 from brain_games.consts import NUMBER_FINISH_RND, NUMBER_START_RND
@@ -8,10 +8,10 @@ DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
 
 def create_game():  # noqa: WPS210
-    """The Brain-gcd data.  # noqa: D401, D400
+    """Create the 'Brain-progression' game data.  # noqa: D401, D400
 
     Returns:
-        return the 2 numbers.
+        return the question.
     """
     number_start = randint(  # noqa: S311
         NUMBER_START_RND, NUMBER_FINISH_RND,
@@ -36,7 +36,7 @@ def correct_answer(question):
     """Create correct answer.  # noqa: DAR201, D400
 
     Args:
-        question: Number from game.
+        question: Number progression.
 
     Returns:
         return the correct answer.
