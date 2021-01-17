@@ -4,17 +4,17 @@
 [![example workflow file path](https://github.com/titanmen1/python-project-lvl1/workflows/Linter/badge.svg)](https://github.com/titanmen1/python-project-lvl1/actions)
 ## Usage
 
-### Brain Even
-[![asciicast](https://asciinema.org/a/AuBM0909rYct8YG3zWPiegraB.svg)](https://asciinema.org/a/AuBM0909rYct8YG3zWPiegraB)
+### Brain even
+[![asciicast](https://asciinema.org/a/8KeaMBEk2MfepWGjQVtFyZWcp.svg)](https://asciinema.org/a/8KeaMBEk2MfepWGjQVtFyZWcp)
 
-### Brain Calc
-[![asciicast](https://asciinema.org/a/Q5UMQ6bR3X0WGZHsfnVT5gCQY.svg)](https://asciinema.org/a/Q5UMQ6bR3X0WGZHsfnVT5gCQY)
+### Brain calc
+[![asciicast](https://asciinema.org/a/zpnDr3YDKLwCx8eUbSxH163Gw.svg)](https://asciinema.org/a/zpnDr3YDKLwCx8eUbSxH163Gw)
 
 ### Brain gcd
-[![asciicast](https://asciinema.org/a/sQ6ffQNpughNXM8YFz829wLAC.svg)](https://asciinema.org/a/sQ6ffQNpughNXM8YFz829wLAC)
+[![asciicast](https://asciinema.org/a/OcbCQSyyoHhnvn8m20EqsXeYk.svg)](https://asciinema.org/a/OcbCQSyyoHhnvn8m20EqsXeYk)
 
 ### Brain progression
-[![asciicast](https://asciinema.org/a/k4n6ahXMGeROQNP3NqZ2HeOix.svg)](https://asciinema.org/a/k4n6ahXMGeROQNP3NqZ2HeOix)
+[![asciicast](https://asciinema.org/a/KuKTcUMPt18Y9ygeeREpCG5O7.svg)](https://asciinema.org/a/KuKTcUMPt18Y9ygeeREpCG5O7)
 
 ### Brain prime
-[![asciicast](https://asciinema.org/a/6zLtf7YMiEZS4S51ajrSYy5t7.svg)](https://asciinema.org/a/6zLtf7YMiEZS4S51ajrSYy5t7)
+[![asciicast](https://asciinema.org/a/bvpGHrkltwlGNw0oFKfwLWbFQ.svg)](https://asciinema.org/a/bvpGHrkltwlGNw0oFKfwLWbFQ)

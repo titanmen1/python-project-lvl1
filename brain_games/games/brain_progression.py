@@ -49,7 +49,7 @@ def correct_answer(question):
         index += 1
     if index <= 5:
         delta = int(all_numbers[index + 2]) - int(all_numbers[index + 1])  # noqa: WPS221, E501
-        current_answer = int(all_numbers[index - 1]) + delta
+        current_answer = int(all_numbers[index + 1]) - delta
     if index > 5:
         delta = int(all_numbers[index - 1]) - int(all_numbers[index - 2])  # noqa: WPS221, E501
         current_answer = int(all_numbers[index - 1]) + delta
