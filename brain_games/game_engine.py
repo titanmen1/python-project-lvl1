@@ -31,4 +31,4 @@ def play_game(game):
             print("Let's try again, {0}!".format(name_user))  # noqa: WPS421
             return
 
-    print('Congratulation, {0}!'.format(name_user))  # noqa: WPS421
+    print('Congratulations, {0}!'.format(name_user))  # noqa: WPS421
