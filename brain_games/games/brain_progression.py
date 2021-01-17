@@ -2,6 +2,8 @@
 """Game gcd."""
 from random import randint
 
+from brain_games.consts import NUMBER_FINISH_RND, NUMBER_START_RND
+
 DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
 
@@ -11,8 +13,13 @@ def create_game():  # noqa: WPS210
     Returns:
         return the 2 numbers.
     """
-    number_start = randint(1, 99)  # noqa: S311, WPS432
-    delta = randint(1, 9)  # noqa: S311
+    number_start = randint(  # noqa: S311
+        NUMBER_START_RND, NUMBER_FINISH_RND,
+    )
+    number_finish_rnd_for_delta = 9
+    delta = randint(  # noqa: S311
+        NUMBER_START_RND, number_finish_rnd_for_delta,
+    )
     length = 10
     index_hidden_num = randint(0, length - 1)  # noqa: S311
     result_game = []

@@ -1,10 +1,17 @@
 [tool.poetry]
 name = "hexlet_code"
-version = "0.1.0"
-description = ""
-authors = ["Artem Arkhipov"]
+version = "0.2.0"
+description = "In this package, 5 games are implemented, such as brain-even, brain-calc, brain-gcd, brain-progression, brain-prime"
+authors = ["Artem Arkhipov <zaq12123@mail.ru>"]
 packages = [
   { include = "brain_games" },
+]
+repository = "https://github.com/titanmen1/python-project-lvl1"
+classifiers = [
+    "Programming Language :: Python :: 3.8",
+    "Development Status :: 4 - Beta",
+    "Topic :: Education",
+    "Topic :: Games/Entertainment",
 ]
 
 [tool.poetry.dependencies]

@@ -2,6 +2,8 @@
 """File with Game even."""
 import random
 
+from brain_games.consts import NUMBER_FINISH_RND, NUMBER_START_RND
+
 DESCRIPTION = 'Answer "yes" if number even otherwise answer "no".'
 
 
@@ -11,7 +13,7 @@ def create_game():
     Returns:
         return the number.
     """
-    return random.randint(1, 100)  # noqa: S311
+    return random.randint(NUMBER_START_RND, NUMBER_FINISH_RND)  # noqa: S311
 
 
 def correct_answer(question):

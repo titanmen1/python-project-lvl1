@@ -2,6 +2,8 @@
 """Game gcd."""
 from random import randint
 
+from brain_games.consts import NUMBER_FINISH_RND, NUMBER_START_RND
+
 DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
 
@@ -11,7 +13,10 @@ def create_game():
     Returns:
         return the 2 numbers.
     """
-    return '{0} {1}'.format(randint(1, 100), randint(1, 100))  # noqa: S311
+    return '{0} {1}'.format(
+        randint(NUMBER_START_RND, NUMBER_FINISH_RND),  # noqa: S311
+        randint(NUMBER_START_RND, NUMBER_FINISH_RND),  # noqa: S311
+    )
 
 
 def correct_answer(question):

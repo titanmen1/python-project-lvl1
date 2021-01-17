@@ -3,6 +3,8 @@
 import operator
 from random import choice, randint
 
+from brain_games.consts import NUMBER_FINISH_RND, NUMBER_START_RND
+
 DESCRIPTION = 'What is the result of the expression?'
 
 operators = ['+', '-', '*']
@@ -14,8 +16,8 @@ def create_game():
     Returns:
         return the question and correct_answer.
     """
-    num1 = randint(1, 100)  # noqa: S311
-    num2 = randint(1, 100)  # noqa: S311
+    num1 = randint(NUMBER_START_RND, NUMBER_FINISH_RND)  # noqa: S311
+    num2 = randint(NUMBER_START_RND, NUMBER_FINISH_RND)  # noqa: S311
     current_operator = choice(operators)  # noqa: S311
     return '{0} {1} {2}'.format(num1, current_operator, num2)
 
