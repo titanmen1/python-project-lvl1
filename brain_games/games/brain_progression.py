@@ -5,10 +5,12 @@ from random import randint
 from brain_games.consts import NUMBER_FINISH_RND, NUMBER_START_RND
 
 DESCRIPTION = 'Find the greatest common divisor of given numbers.'
+NUMBER_FINISH_RND_FOR_DELTA = 9
+LENGTH = 10
 
 
-def create_game():  # noqa: WPS210
-    """Create the 'Brain-progression' game data.  # noqa: D401, D400
+def create_game():
+    """Create the 'Brain-progression' game data.
 
     Returns:
         return the question.
@@ -16,24 +18,22 @@ def create_game():  # noqa: WPS210
     number_start = randint(  # noqa: S311
         NUMBER_START_RND, NUMBER_FINISH_RND,
     )
-    number_finish_rnd_for_delta = 9
     delta = randint(  # noqa: S311
-        NUMBER_START_RND, number_finish_rnd_for_delta,
+        NUMBER_START_RND, NUMBER_FINISH_RND_FOR_DELTA,
     )
-    length = 10
-    index_hidden_num = randint(0, length - 1)  # noqa: S311
+    index_hidden_num = randint(0, LENGTH - 1)  # noqa: S311
     result_game = []
-    for index in range(length):
+    for index in range(LENGTH):
         if index == index_hidden_num:
             result_game.append('..')
         else:
             result_game.append(str(number_start))
-        number_start = number_start + delta  # noqa: WPS350
+        number_start += delta
     return ' '.join(result_game)
 
 
 def correct_answer(question):
-    """Create correct answer.  # noqa: DAR201, D400
+    """Create correct answer.
 
     Args:
         question: Number progression.
@@ -43,8 +43,8 @@ def correct_answer(question):
     """
     all_numbers = question.split(' ')
     index = 0
-    for item in all_numbers:  # noqa: WPS110
-        if item == '..':
+    for item_game in all_numbers:
+        if item_game == '..':
             break
         index += 1
     if index <= 5:

@@ -23,7 +23,7 @@ def create_game():
 
 
 def correct_answer(question):
-    """Create correct answer.  # noqa: DAR201, D400
+    """Create correct answer.
 
     Args:
         question: Numbers and operator from game.

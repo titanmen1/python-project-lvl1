@@ -8,7 +8,7 @@ DESCRIPTION = 'Answer "yes" if number even otherwise answer "no".'
 
 
 def create_game():
-    """Create the 'Brain-Even' game data.  # noqa: D401, D400
+    """Create the 'Brain-Even' game data.
 
     Returns:
         return the number.
@@ -17,7 +17,7 @@ def create_game():
 
 
 def correct_answer(question):
-    """Create correct answer.  # noqa: DAR201, D400
+    """Create correct answer.
 
     Args:
         question: Number from game.
