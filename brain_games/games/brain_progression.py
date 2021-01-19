@@ -22,13 +22,13 @@ def creates_question():
         NUMBER_START_RND, NUMBER_FINISH_RND_FOR_DELTA,
     )
     index_hidden_num = randint(0, LENGTH - 1)
-    question = []
+    question = ''
     for index in range(LENGTH):
         if index == index_hidden_num:
             correct_answer = str(number_start + delta * index)
-            question.append("..")
+            question = '{0}{1}'.format(question, '.. ')
         else:
             next_step = number_start + delta * index
-            question.append(next_step)
+            question = '{0}{1}{2}'.format(question, str(next_step), ' ')
 
     return question, correct_answer
