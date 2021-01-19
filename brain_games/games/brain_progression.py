@@ -9,7 +9,7 @@ NUMBER_FINISH_RND_FOR_DELTA = 9
 LENGTH = 10
 
 
-def create_game():
+def creates_question():
     """Func creates question and correct answer for the 'Brain-progression' game data.
 
     Returns:
@@ -25,7 +25,7 @@ def create_game():
     question = []
     for index in range(LENGTH):
         if index == index_hidden_num:
-            correct_answer = number_start + delta * index
+            correct_answer = str(number_start + delta * index)
             question.append("..")
         else:
             next_step = number_start + delta * index

@@ -7,7 +7,7 @@ from brain_games.consts import NUMBER_FINISH_RND, NUMBER_START_RND
 DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
 
-def create_game():
+def creates_question():
     """Func creates question and correct answer for the 'Brain-gcd' game data.
 
     Returns:
