@@ -1,7 +1,17 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/titanmen1/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/titanmen1/python-project-lvl1/actions)
-[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/1e715febaafdf28532b7/maintainability)](https://codeclimate.com/github/titanmen1/python-project-lvl1/maintainability)
 [![example workflow file path](https://github.com/titanmen1/python-project-lvl1/workflows/Linter/badge.svg)](https://github.com/titanmen1/python-project-lvl1/actions)
+
+This is the first practical Hexlet project.
+The package contains five simple mathematics quiz games:
+
+- Check for evenness `brain-even`
+- Calculator `brain-calc`
+- Greatest common divider `brain-gcd`
+- Arithmetic progression `brain-progression`
+- Prime number `brain-prime`
+
 ## Usage
 
 ### Brain even

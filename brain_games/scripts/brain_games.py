@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """Base script."""
-from brain_games.cli import welcome_user
+from brain_games.game_engine import welcome_user
 
 
 def main():

@@ -10,47 +10,25 @@ LENGTH = 10
 
 
 def create_game():
-    """Create the 'Brain-progression' game data.
+    """Func creates question and correct answer for the 'Brain-progression' game data.
 
     Returns:
-        return the question.
+        return the question and correct answer.
     """
-    number_start = randint(  # noqa: S311
+    number_start = randint(
         NUMBER_START_RND, NUMBER_FINISH_RND,
     )
-    delta = randint(  # noqa: S311
+    delta = randint(
         NUMBER_START_RND, NUMBER_FINISH_RND_FOR_DELTA,
     )
-    index_hidden_num = randint(0, LENGTH - 1)  # noqa: S311
-    result_game = []
+    index_hidden_num = randint(0, LENGTH - 1)
+    question = []
     for index in range(LENGTH):
         if index == index_hidden_num:
-            result_game.append('..')
+            correct_answer = number_start + delta * index
+            question.append("..")
         else:
-            result_game.append(str(number_start))
-        number_start += delta
-    return ' '.join(result_game)
+            next_step = number_start + delta * index
+            question.append(next_step)
 
-
-def correct_answer(question):
-    """Create correct answer.
-
-    Args:
-        question: Number progression.
-
-    Returns:
-        return the correct answer.
-    """
-    all_numbers = question.split(' ')
-    index = 0
-    for item_game in all_numbers:
-        if item_game == '..':
-            break
-        index += 1
-    if index <= 5:
-        delta = int(all_numbers[index + 2]) - int(all_numbers[index + 1])  # noqa: WPS221, E501
-        current_answer = int(all_numbers[index + 1]) - delta
-    if index > 5:
-        delta = int(all_numbers[index - 1]) - int(all_numbers[index - 2])  # noqa: WPS221, E501
-        current_answer = int(all_numbers[index - 1]) + delta
-    return str(current_answer)
+    return question, correct_answer

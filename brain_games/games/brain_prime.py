@@ -8,24 +8,25 @@ DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
 
 def create_game():
-    """Create the 'Brain-gcd' game data.
+    """Func creates question and correct answer for the 'Brain-gcd' game data.
 
     Returns:
-        return the number.
+        return the question and correct answer.
     """
-    return str(randint(NUMBER_START_RND, NUMBER_FINISH_RND))  # noqa: S311
+    question = randint(NUMBER_START_RND, NUMBER_FINISH_RND)
+    correct_answer = search_prime(question)
+    return question, correct_answer
 
 
-def correct_answer(question):
-    """Create correct answer.
+def search_prime(num):
+    """Func search prime number.
 
     Args:
-        question: Number from game.
+        num: Number for search prime.
 
     Returns:
         return the correct answer.
     """
-    num = int(question)
     if num < 2:
         return 'no'
     res = 0

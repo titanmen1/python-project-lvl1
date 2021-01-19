@@ -1,28 +1,18 @@
 #!/usr/bin/env python
 """Game even."""
-import random
+from random import randint
 
 from brain_games.consts import NUMBER_FINISH_RND, NUMBER_START_RND
 
 DESCRIPTION = 'Answer "yes" if number even otherwise answer "no".'
 
 
-def create_game():
-    """Create the 'Brain-Even' game data.
+def creates_question():
+    """Func creates question and correct answer for the 'Brain-Even'.
 
     Returns:
-        return the number.
+        return the question and correct answer.
     """
-    return random.randint(NUMBER_START_RND, NUMBER_FINISH_RND)  # noqa: S311
-
-
-def correct_answer(question):
-    """Create correct answer.
-
-    Args:
-        question: Number from game.
-
-    Returns:
-        return the correct answer.
-    """
-    return 'yes' if question % 2 == 0 else 'no'
+    question = randint(NUMBER_START_RND, NUMBER_FINISH_RND)
+    correct_answer = 'yes' if question % 2 == 0 else 'no'
+    return question, correct_answer

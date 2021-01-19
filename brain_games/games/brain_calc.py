@@ -10,34 +10,36 @@ DESCRIPTION = 'What is the result of the expression?'
 operators = ['+', '-', '*']
 
 
-def create_game():
-    """Create the 'Brain-Calc' game data.
+def creates_question():
+    """Func creates question and correct answer for the 'Brain-Calc' game data.
 
     Returns:
-        return the question.
+        return the question and correct answer.
     """
-    num1 = randint(NUMBER_START_RND, NUMBER_FINISH_RND)  # noqa: S311
-    num2 = randint(NUMBER_START_RND, NUMBER_FINISH_RND)  # noqa: S311
-    current_operator = choice(operators)  # noqa: S311
-    return '{0} {1} {2}'.format(num1, current_operator, num2)
+    num1 = randint(NUMBER_START_RND, NUMBER_FINISH_RND)
+    num2 = randint(NUMBER_START_RND, NUMBER_FINISH_RND)
+    current_operator = choice(operators)
+
+    question = '{0} {1} {2}'.format(num1, current_operator, num2)
+    correct_answer = str(calculator(num1, num2, current_operator))
+    return question, correct_answer
 
 
-def correct_answer(question):
-    """Create correct answer.
+def calculator(num1, num2, sign):
+    """Func for calculations.
 
     Args:
-        question: Numbers and operator from game.
+        num1: Number for calc.
+        num2: Number for calc.
+        sign: Operation sign.
 
     Returns:
-        return the correct answer.
+        return Number.
     """
-    num1 = int(question.split(' ')[0])
-    num2 = int(question.split(' ')[2])
-    current_operator = question.split(' ')[1]
-    if current_operator == '+':
+    if sign == '+':
         result_calculations = operator.add(num1, num2)
-    if current_operator == '-':
+    if sign == '-':
         result_calculations = operator.sub(num1, num2)
-    if current_operator == '*':
+    if sign == '*':
         result_calculations = operator.mul(num1, num2)
-    return str(result_calculations)
+    return result_calculations
