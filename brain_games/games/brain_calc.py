@@ -11,7 +11,7 @@ operators = ['+', '-', '*']
 
 
 def creates_question():
-    """Func creates question and correct answer for the 'Brain-Calc' game data.
+    """Func creates question and correct answer for the 'Brain-Calc'.
 
     Returns:
         return the question and correct answer.

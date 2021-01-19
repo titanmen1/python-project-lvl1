@@ -10,7 +10,7 @@ LENGTH = 10
 
 
 def creates_question():
-    """Func creates question and correct answer for the 'Brain-progression' game data.
+    """Func creates question and correct answer for the 'Brain-progression'.
 
     Returns:
         return the question and correct answer.
