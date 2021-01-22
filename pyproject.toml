@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "hexlet_code"
+name = "hexlet-code"
 version = "0.2.0"
 description = "In this package, 5 games are implemented, such as brain-even, brain-calc, brain-gcd, brain-progression, brain-prime"
 authors = ["Artem Arkhipov <zaq12123@mail.ru>"]
