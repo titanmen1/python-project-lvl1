@@ -7,14 +7,14 @@ from brain_games.consts import NUMBER_FINISH_RND, NUMBER_START_RND
 DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
 
-def creates_question():
+def create_game_data():
     """Func creates question and correct answer for the 'Brain-gcd'.
 
     Returns:
         return the question and correct answer.
     """
     question = randint(NUMBER_START_RND, NUMBER_FINISH_RND)
-    correct_answer = search_prime(question)
+    correct_answer = 'yes' if search_prime(question) else 'no'
     return question, correct_answer
 
 
@@ -28,11 +28,11 @@ def search_prime(num):
         return the correct answer.
     """
     if num < 2:
-        return 'no'
+        return False
     res = 0
     for index in range(2, num // 2 + 1):
         if num % index == 0:
             res = res + 1
     if res <= 0:
-        return 'yes'
-    return 'no'
+        return True
+    return False

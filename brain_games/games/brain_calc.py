@@ -10,7 +10,7 @@ DESCRIPTION = 'What is the result of the expression?'
 operators = ['+', '-', '*']
 
 
-def creates_question():
+def create_game_data():
     """Func creates question and correct answer for the 'Brain-Calc'.
 
     Returns:
@@ -21,11 +21,11 @@ def creates_question():
     current_operator = choice(operators)
 
     question = '{0} {1} {2}'.format(num1, current_operator, num2)
-    correct_answer = str(calculator(num1, num2, current_operator))
+    correct_answer = str(calculate(num1, num2, current_operator))
     return question, correct_answer
 
 
-def calculator(num1, num2, sign):
+def calculate(num1, num2, sign):
     """Func for calculations.
 
     Args:

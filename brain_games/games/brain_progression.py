@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """Game progression."""
-from random import randint
+from random import choice, randint
 
 from brain_games.consts import NUMBER_FINISH_RND, NUMBER_START_RND
 
@@ -9,7 +9,7 @@ NUMBER_FINISH_RND_FOR_DELTA = 9
 LENGTH = 10
 
 
-def creates_question():
+def create_game_data():
     """Func creates question and correct answer for the 'Brain-progression'.
 
     Returns:
@@ -21,14 +21,14 @@ def creates_question():
     delta = randint(
         NUMBER_START_RND, NUMBER_FINISH_RND_FOR_DELTA,
     )
-    index_hidden_num = randint(0, LENGTH - 1)
-    question = ''
-    for index in range(LENGTH):
-        if index == index_hidden_num:
-            correct_answer = str(number_start + delta * index)
-            question = '{0}{1}'.format(question, '.. ')
-        else:
-            next_step = number_start + delta * index
-            question = '{0}{1}{2}'.format(question, str(next_step), ' ')
+    progression = range(number_start, number_start + (LENGTH * delta), delta)
+    index_hidden_num = choice(progression)
+    question = []
 
-    return question, correct_answer
+    for num in progression:
+        if num == index_hidden_num:
+            question.append('..')
+        else:
+            question.append(str(num))
+
+    return ' '.join(question), str(index_hidden_num)

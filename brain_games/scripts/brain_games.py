@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 """Base script."""
-from brain_games.game_engine import welcome_user
+from brain_games.game_engine import play
 
 
 def main():
     """Start base 'welcome' func."""
-    welcome_user()
+    play()
 
 
 if __name__ == '__main__':

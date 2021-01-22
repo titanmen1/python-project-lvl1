@@ -7,7 +7,7 @@ from brain_games.consts import NUMBER_FINISH_RND, NUMBER_START_RND
 DESCRIPTION = 'Answer "yes" if number even otherwise answer "no".'
 
 
-def creates_question():
+def create_game_data():
     """Func creates question and correct answer for the 'Brain-Even'.
 
     Returns:

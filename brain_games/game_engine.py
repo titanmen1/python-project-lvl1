@@ -5,30 +5,22 @@ import prompt
 NUMBER_OF_ROUNDS = 3
 
 
-def welcome_user():
-    """Func welcome user.
-
-    Returns:
-        return the name user.
-    """
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print('Hello, {0}!'.format(name))
-    return name
-
-
-def play_game(game):
+def play(game=None):
     """Engine for the 'Brain Game'.
 
     Args:
         game: The game.
     """
-    name_user = welcome_user()
+    print('Welcome to the Brain Games!')
+    name_user = prompt.string('May I have your name? ')
+    print('Hello, {0}!'.format(name_user))
+    if game is None:
+        return
     print(game.DESCRIPTION)
     iteration = 0
 
     while iteration < NUMBER_OF_ROUNDS:
-        question, correct_answer = game.creates_question()
+        question, correct_answer = game.create_game_data()
         print('Question: {0}'.format(question))
         user_answer = prompt.string('Your answer: ')
         if user_answer == correct_answer:
